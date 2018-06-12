@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Cifrado César</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<section>
+		<!--Espacio central con el título y se puede introducir texto-->
+		<h3>Cifrado César</h3>
+		<h4>Preámbulo
+			Está próxima la fecha del cumpleaños de tu flacx (novix) y estás organizando una fiesta sorpresa. Para organizar la fiesta has creado un grupo de Whatsapp junto con amigos y familiares.
+			
+			Un gran problema es que pones tu alarma para levantarte temprano, sin embargo (como supondrás) eso nunca sucede y tu flacx es quien termina apagando la alarma y "de casualidad" revisando tus mensajes. Debido a que es algo sorpresa, decides crear una aplicación que te permita enviar mensajes cifrados y que las demás personas (partícipes de la fiesta) puedan tener una interfaz para descifrarlo.</h4>
+		<h5>En esta página puedes cifrar los mensajes que desees, escribe tu texto en la ventana de cifrar, 
+			escoge un numero en el boton key y al dar click en cifrar te arrojará el resultado en la ventana derecha, si quieres decifrar solo
+			copia tu texto, pegalo en descifrar, ELIGE EL MISMO NUMERO DE KEY CON EL QUE CIFRASTE y da click en descifrar. Puedes borrar los textos con -reset
+		</h5>
+		<hr>
+		<!--Se abre un div para la columna de la izquierda-->
+		<div>
+			<h4>¿Qué mensaje quieres encripar?</h4>
+			<p>
+			   <textarea id="cifrar" placeholder="Encripta tu mensaje"></textarea>
+			</p>
+			<p>
+			   <h4>¿Qué dice tu mensaje?</h4>
+			</p>
+			<textarea id="descifrar" placeholder="Descifra tu mensaje"></textarea>
+		</div>
+		<!--Se abre un Div para la columna central-->
+		<div class="div-medio">
+			<h4>Key</h4>
+			<p>
+			<input type="number" id="key" min="0" max="50" value="0">
+			<p>
+			<input type="submit" onclick="cifrarMensaje()" value="Cifrar">
+			<p>
+			<input type="submit" onclick="descifrarMensaje()" value="Descifrar">
+			<p>
+			<input type="button" id="reset" onclick="reset()" value="Reset">
+		</div>
+		<!--Se abre un div para la columna derecha-->
+		<div>
+			<h4>Mensaje Final</h4>
+			<textarea id="resultadoF" placeholder="Mira aquí tu Resultado"></textarea>
+		</div>
+	</section>
+	<script type="text/javascript" src="cipher.js"></script>
+</body>
+
 </html>
