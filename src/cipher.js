@@ -80,6 +80,6 @@ const reset = () => {
   document.querySelector("#resultadoF").value="";
 };
 
-
+//comentario
 
 
