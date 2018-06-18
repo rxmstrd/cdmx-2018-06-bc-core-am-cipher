@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Cifrado César</title>
+	<link rel="stylesheet" href="style.css">
+	<!--Se ingresa el link para las fuentes e íconos de la página-->
+	<link href="https://fonts.googleapis.com/css?family=Spinnaker" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+
+<body>
+	    <!--Se abre un div para ingresar el ícono de la página que contiene un enlace a la historia del código césar-->
+		<div id="cesarTalk">
+				<a title="¿Qué es el código César?" href="https://www.youtube.com/watch?v=U6MnXwJucMM&t=98s"target="_blank">
+				<img src="caesartalk.png" alt="caesartalk" width="110" height="50" /></a>
+			</div> 
+			<hr>
+	<section>
+		<!--se abre un div que contiene el cuadro de texto el input de key y los inputs de cifrado y descrifrado -->
+		<div id="Paso1">
+			<h4 class="caja1"><span>1-</span> Escribe un mensaje o pega el que recibiste.</h4>
+			<br/>
+			<textarea id="cifrar" placeholder="Escribe o pega tu mensaje aquí."></textarea>
+			<br/>	
+			<br/>			
+			<h4><span>2-</span> Elige la "key" que prefieras si es tu mensaje, o teclea la que recibiste.</h4>
+			<br/>		
+			<h4>Key -><input type="number" id="offset"  min="0" max="50" value="0"></h4>
+			<br/>
+			<h4><span>3-</span> Da click en "Cifrar" si tú escribiste el mensaje,</h4>
+			<h4>o en "Descifrar" para descubrir el mensaje que recibiste.</h4>
+			<br/>
+			<p><input type="button" id="encode" onclick="mensaje()" value="Cifrar">
+			   <input type="button" id="decode" onclick="mensaje2()" value="Descifrar">
+			</p>
+			    
+		</div>
+		<!--Se abre un segundo div que contiene el area de texto para el resultado, los enlaces a redes sociales y un boton de reset -->
+		<div id="final">
+			<h4 class="resultadoh4"><span>4-</span> Ahora mira aquí tu nuevo mensaje:</h4>
+			<br/>
+					<textarea id="resultadoF" placeholder="Mira aquí el texto"></textarea>
+					<div id="redes" >
+					<br/>
+						<h4>¡Hey! ¿Cifraste un mensaje? ¡Cópialo y envíalo a tus grupos o por mensaje privado!</h4>
+					<br/>
+						<a href="https://web.telegram.org" target="_blank">
+							<i class="fab fa-telegram-plane"></i>
+						</a>
+						<a href="https://www.whatsapp.com/?lang=es" target="_blank">
+							<i class="fab fa-whatsapp-square"></i>
+						</a>
+						<a href="https://www.messenger.com" target="_blank">
+							<i class="fab fa-facebook-messenger"></i>
+						</a>
+						<a href="https://slack.com/intl/es" target="_blank">
+							<i class="fab fa-slack-hash"></i>
+						</a>
+					</div>
+					<br/>
+					<br/>
+						<h4>¿Más que Cifrar o Descifrar? Da click aquí y empieza de nuevo:</h4>
+						<br/>
+						<input type="button" id="reset" onclick="reset()" value="Reset">
+		</div> 
+		<!--Ultima sección que contiene un link a la dirección de la página en git hub pages -->
+	</section>
+	<div>
+	    <h4 id="enlace">
+				<a href="https://rxmstrd.github.io/cdmx-2018-06-bc-core-am-cipher1/src/index.html" target="_blank">¡Envía la liga del sitio!</a>
+
+		</h4>
+	</div>	
+  
+	<script type="text/javascript" src="cipher.js"></script>
+	<script src="index.js"></script>
+</body>
+
 </html>

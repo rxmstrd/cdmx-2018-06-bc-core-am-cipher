@@ -1,0 +1,74 @@
+* {
+    padding: 2px; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body{ 
+    background-image: url(msj.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: 'Spinnaker', sans-serif;
+    font-size: .85rem;
+    margin: 1rem;
+
+
+} 
+
+#Paso1{
+    font-weight: 100;
+    text-align: center;
+    width: 48%;
+    display: block;
+    float: left;
+    height: 400px;
+    background-color:rgba(255, 248, 220, 0.5);
+   
+}
+#final{
+    font-weight: 100;
+    text-align: center;
+    width: 48%;
+    display: block;
+    float: right;
+    height: 400px;
+    background-color:rgba(255, 248, 220, 0.5);
+   
+}
+
+.resultadoh4{
+    margin-top: 1rem;
+   
+}
+
+.caja1{
+    margin-top: 1rem;
+   
+}
+#cifrar{
+   width: 100%;
+   height: 6rem;
+}
+
+#resultadoF{
+    width: 100%;
+    height: 6rem;
+}
+a { 
+    font-size: 3rem;
+    text-decoration: none;
+}
+h4 span { 
+    font-size: 1.1rem;
+    color: ghostwhite;
+    border: 1px solid ghostwhite;
+}
+section{
+    padding: 8rem 0 0 37rem;
+}
+
+#enlace a{ 
+    font-size: 1.1rem;
+    color: ghostwhite;
+    }
