@@ -99,7 +99,9 @@ body{
     padding: 1.5rem;
     text-align: center;
     border-radius: 20px;   
-
+}
+.instruccion{
+    font-size: 3rem;
 }
 @media screen and (min-width: 768px){ 
 body{ 
@@ -120,11 +122,11 @@ body{
     
 }  
 .Paso1{
-    width: 30%;
+    width: 50%;
     display: inline-block;
     font-size: 1rem;
-    margin-left: 3.5rem;
-    margin-right: 20rem;
+    margin-left: 9.4rem;
+    margin-right: 25rem;
        
 }
 .Paso1 input{
@@ -136,7 +138,7 @@ body{
 }
 .cajaDos{
    display: inline-block;
-   width: 30%;
+   width: 50%;
    background-color:rgba(255, 248, 220, 0.5);
    border-radius: 20px;
 }
@@ -147,6 +149,7 @@ body{
     margin-bottom: 1rem;
     height: 8rem;  
     background-color: transparent;
+   
 } 
 .redes{
     width: 100%;
@@ -181,5 +184,12 @@ body{
 }
 .resultadoh4{
     margin: 0;
+}
+.instruccion{
+    font-size: 1em;
+    margin-top: 6.5rem;
+}
+.contenido{
+    display: inline-flex;
 }
 }
