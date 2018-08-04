@@ -1,74 +1,175 @@
 * {
-    padding: 2px; 
+    padding: 0; 
     margin: 0; 
     box-sizing: border-box;
 }
 
 body{ 
-    background-image: url(msj.jpg);
+    background-image: url(imagenes/gato.jpg);
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
+    background-color: #F4E033;
     font-family: 'Spinnaker', sans-serif;
-    font-size: .85rem;
-    margin: 1rem;
-
-
-} 
-
-#Paso1{
-    font-weight: 100;
-    text-align: center;
-    width: 48%;
-    display: block;
-    float: left;
-    height: 400px;
-    background-color:rgba(255, 248, 220, 0.5);
-   
+    margin-left: 2rem;
 }
-#final{
-    font-weight: 100;
-    text-align: center;
-    width: 48%;
-    display: block;
-    float: right;
-    height: 400px;
-    background-color:rgba(255, 248, 220, 0.5);
-   
-}
+.cesarTalk img{
+    width: 900px;
+    height: 600px;
+    margin-left: 0 0 0 1rem;
+    padding: 0rem;
+    } 
 
-.resultadoh4{
-    margin-top: 1rem;
-   
-}
-
-.caja1{
-    margin-top: 1rem;
-   
-}
-#cifrar{
-   width: 100%;
-   height: 6rem;
-}
-
-#resultadoF{
-    width: 100%;
-    height: 6rem;
-}
-a { 
+.Paso1{
     font-size: 3rem;
-    text-decoration: none;
+    font-weight: 100;  
+    text-align: center;
+    width: 95%;
+    display: inline-block;
+    background-color:rgba(255, 248, 220, 0.5);
+    border-radius: 20px;
+    
 }
-h4 span { 
-    font-size: 1.1rem;
-    color: ghostwhite;
-    border: 1px solid ghostwhite;
-}
-section{
-    padding: 8rem 0 0 37rem;
+.cifrar{
+    width: 94%;
+    height: 20rem;
+    font-size: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    background-color: transparent;
+
+ }
+ .Paso1 input{
+    font-size: 3rem;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #F4E033;
+    border-radius: 20px;
+    width: 15rem;
+    margin-bottom: 2rem;
 }
 
-#enlace a{ 
-    font-size: 1.1rem;
-    color: ghostwhite;
+.final{
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+    width: 95%;
+    display: inline-block;
+    background-color:rgba(255, 248, 220, 0.5);  
+    margin-top: 4rem;
+    border-radius: 20px;
+}
+.resultadoF{
+    width: 94%;
+    height: 20rem;
+    font-size: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    background-color: transparent;
+
+}
+.final a{ 
+    font-size: 3em;
+    margin: .2em;
+}
+
+.reset{
+    font-size: 3rem;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #AFEEEE;
+    border-radius: 20px;
+    width: 15rem;
+    margin-bottom: 2rem;
+}
+.redes{
+    width: 94%;
+    height: 40rem;
+    margin-top: 2rem;
+    border-radius: 20px;  
+    font-size: 3rem;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: rgba(255, 248, 220, 0.5);
+    border-radius: 20px;
+}
+
+.redes a{
+    font-size: 3em;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 20px;   
+
+}
+@media screen and (min-width: 768px){ 
+body{ 
+    margin-left: 2.7rem;
+}
+}
+@media screen and (min-width: 1200px){
+body{ 
+    margin: 0 1rem;
     }
+.cesarTalk img{
+    width: 210px;
+    height: 150px;
+    margin-left: 0 0 0 1rem;
+    
+}  
+.Paso1{
+    width: 30%;
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: 1rem;    
+}
+.Paso1 input{
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+.cajaDos{
+   display: block;
+   width: 100%;
+
+
+}
+.final{
+    width: 30%;
+    /* display: inline-block; */
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    height: 8rem;  
+} 
+.redes{
+    width: 30%;
+    height: 8rem;
+    /* display: inline-block; */
+    font-size: 1rem;
+    margin-bottom: 1rem;  
+}
+.redes a {
+	font-size: 2.3rem;
+    padding: 1rem;
+}
+	
+.cifrar{
+    font-size: 1.5rem;
+    height: 8rem;
+    display: inline-block;
+}
+.resultadoF{
+    height: 4rem;
+    font-size: 1rem;
+}
+
+.reset {
+    font-size: 1rem;
+	padding: 10px;
+	text-align: center;
+	width: 5rem;
+	margin-bottom: 1rem;
+ 
+}
+}
