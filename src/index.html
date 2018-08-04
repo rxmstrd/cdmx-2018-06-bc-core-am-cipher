@@ -13,19 +13,21 @@
 
 <body>
 	    <!--Se abre un div para ingresar el ícono de la página que contiene un enlace a la historia del código césar-->
-		<div class="cesarTalk">
-				<a title="¿Qué es el código César?" href="https://www.youtube.com/watch?v=U6MnXwJucMM&t=98s"target="_blank">
-				<img src="imagenes/finalverde"alt="caesarstalk"/></a>
-		</div> 
+		<header>
+				<div class="cesarTalk">
+					<a title="¿Qué es el código César?" href="https://www.youtube.com/watch?v=U6MnXwJucMM&t=98s"target="_blank">
+					<img src="imagenes/finalverde"alt="caesarstalk"/></a>
+				</div> 
+	  </header>
 	
 		<!--se abre un div que contiene el cuadro de texto el input de key y los inputs de cifrado y descrifrado -->
 		<div class="Paso1">
 			<h4 class="caja1"><span>1-</span> Tu mensaje.</h4>
 			<br/>
-			<textarea class="cifrar" id="cifrar" placeholder="Escribe o pega tu mensaje aquí."></textarea>
+			<textarea class="cifrar" id="cifrar" placeholder="Escribe o pega tu mensaje aquí tu mensaje."></textarea>
 			<br/>	
 			<br/>			
-			<h4><span>2-</span> Tu "Key"</h4>
+			<h4><span>2-</span> Tecléa tu "Key"</h4>
 			<br/>		
 			<input class="key" type="number" id="offset"  min="0" max="50" value="0">
 			<br/>
@@ -45,9 +47,9 @@
 				</div> 	
 				
 				<div class="redes" >
-					<br/>
+				
 							<h4>¡Comparte tu resultado en redes!</h4>
-					<br/>
+				
 					<a href="https://web.telegram.org" target="_blank">
 							<i class="fab fa-telegram-plane"></i>
 					</a>
@@ -65,12 +67,7 @@
 						<input class="reset" type="button" id="reset" onclick="reset()" value="Reset">
 				</div>
 		</section>
-		<!--Ultima sección que contiene un link a la dirección de la página en git hub pages -->
 	
-	<!-- <div "enlace">
-		<input type="text" href="https://rxmstrd.github.io/cdmx-2018-06-bc-core-am-cipher1/src/index.html" target="_blank">¡Envía la liga del sitio!</a> 		
-	</div>	
-   -->
 	<script type="text/javascript" src="cipher.js"></script>
 	<script src="index.js"></script>
 </body>

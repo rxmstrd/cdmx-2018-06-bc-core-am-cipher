@@ -3,13 +3,12 @@ window.cipher = {
   encode : (offset, string) => {
   //Se declaran dos variables vacias para ser usadas en la función
     let resultado= [];
-    let cifrado = [];
-    
-//se toma el indice i para señalar dar las indicaciones de 
+    let cifrado = [];   
+
     for ( let i = 0; i < string.length; i++ ) {
 //si el string es mayor o igual a 65 y menor o igual a 90 se aplica el siguiente paso
       if (string[i].charCodeAt() >= 65 && string[i].charCodeAt() <= 90) {
-//Si se cumplio la condición anterios entonces de aplica la formula para las mayusculas del codigo ascci
+//Si se cumplio la condición anterior entonces de aplica la formula para las mayusculas del codigo ascci
         cifrado = (string[i].charCodeAt() - 65 + offset) % 26 + 65;
       }
 //Si el estring es mayor o igual a 97 y menor o igual a 122 se aplica el siguiente paso
@@ -25,14 +24,7 @@ window.cipher = {
       else {
         cifrado = (string[i].charCodeAt());
       }
-      
-
-      //else if (string[i].charCodeAt() >= 32 && cipher1[i].charCodeAt() <= 64) {
-      //  symbols = (string[i].charCodeAt()- 32 + offset)%33 + 32;
-      //}
-        
-        
-      //resultado += String.fromCharCode(cifrado)+ String.fromCharCode(symbols);
+    
  //El resultado es igual a la suma de los resultados convertidos en string
       resultado += String.fromCharCode(cifrado);
 
@@ -43,7 +35,6 @@ window.cipher = {
   decode: (offset, string) => {
     let resultado = [];
     let cifrado = [];
-    let symbols = [];
 
     for (let i = 0; i < string.length; i++) {
 
@@ -59,27 +50,16 @@ window.cipher = {
       else {
         cifrado = (string[i].charCodeAt());
       }
-      //else if (string[i].charCodeAt() >= 32 && cipher1[i].charCodeAt() <= 64) {
-      //  symbols = (string[i].charCodeAt()- 64 + offset)%33 + 64;
-      //}
-        
-      //resultado += String.fromCharCode(cifrado)+ String.fromCharCode(symbols);
+      
       resultado += String.fromCharCode(cifrado);
     }return resultado;
 
   },
 
-  createCipherWithOffset: () => { console.log('createCipherWithOffset'); }
+  // createCipherWithOffset: () => { console.log('createCipherWithOffset'); }
 
 };
 
-// se declara una constante reset que llama al valor de las areas de texto y del input offset para dejarlos con valor vacio
-const reset = () => {
-  document.querySelector("#cifrar").value="";
-  document.querySelector("#offset").value="";
-  document.querySelector("#resultadoF").value="";
-};
 
-//comentario
 
 

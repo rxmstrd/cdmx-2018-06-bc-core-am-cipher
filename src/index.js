@@ -17,5 +17,12 @@ let mensaje2=() => {
 
 };
 
+// se declara una constante reset que llama al valor de las areas de texto y del input offset para dejarlos con valor vacio
+const reset = () => {
+    document.querySelector("#cifrar").value="";
+    document.querySelector("#offset").value="";
+    document.querySelector("#resultadoF").value="";
+  };
+
 
 
